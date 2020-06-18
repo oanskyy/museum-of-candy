@@ -1,6 +1,9 @@
 :root { 
   --main-red-color: #ea1c2c;
-  --pink-text: #f498b8;
+  --pink-text: #f391b4;
+  --main-pink-bg: #f5d9d5;
+  --secondary-pink-bg: #dec0de;
+  --transparent-pink-bg: rgba(197, 167, 165, 0.164);
 }
 
 body { 
@@ -13,16 +16,16 @@ body {
   font-size: 1.5rem;
 }
 #main-navbar .nav-link:hover { 
-  color: #ea1c2c;
+  color: var(--main-red-color); 
 }
 
 #main-navbar .navbar-brand { 
-  color: #ea1c2c; 
+  color: var(--main-red-color); 
   font-size: 1.5rem;
 }
 
 .navbar.scrolled {
-  background: rgb(222,192,222);
+  background: var(--secondary-pink-bg);
   transition: background 500ms;
 }
 
@@ -54,4 +57,17 @@ h1 {
   font-weight: 100;
   font-size: 1.125rem;
   line-height: 2;
+}
+
+.footer { 
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 100;
+  background-color: var(--transparent-pink-bg);
+}
+
+a, a:hover { 
+  text-decoration: none; 
+  color: var(--main-red-color);
+  font-weight: 300;
 }
