@@ -1,5 +1,6 @@
 :root { 
   --main-red-color: #ea1c2c;
+  --pink-text: #f498b8;
 }
 
 body { 
@@ -7,12 +8,9 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-#main-navbar { 
-  font-size: 1.5rem; 
-}
-
 #main-navbar .nav-link { 
-  color: #fff;
+  color: #fff; 
+  font-size: 1.5rem;
 }
 #main-navbar .nav-link:hover { 
   color: #ea1c2c;
@@ -20,13 +18,12 @@ body {
 
 #main-navbar .navbar-brand { 
   color: #ea1c2c; 
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
 
 h1 { 
   font-size: 4rem;
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (max-width: 1200px) {
   h1 { 
@@ -36,4 +33,18 @@ h1 {
 
 .slash { 
   color: var(--main-red-color);
+}
+
+.blurb h2 { 
+  color: var(--main-red-color);
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.blurb p { 
+  color: var(--pink-text);
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
 }
