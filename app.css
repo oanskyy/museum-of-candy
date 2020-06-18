@@ -1,3 +1,7 @@
+:root { 
+  --main-red-color: #ea1c2c;
+}
+
 body { 
   background-color: #f5d9d5;
   font-family: "Nunito", sans-serif;
@@ -17,4 +21,19 @@ body {
 #main-navbar .navbar-brand { 
   color: #ea1c2c; 
   font-size: 1.5rem; 
+}
+
+h1 { 
+  font-size: 4rem;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  h1 { 
+    font-size: 3.2rem;
+  }
+}
+
+.slash { 
+  color: var(--main-red-color);
 }
